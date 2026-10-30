@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- TODO: replace every "[...]" placeholder with the client's real details -->
+  <title>We Suck · Couch &amp; Upholstery Cleaning | [Service Area]</title>
+  <meta name="description" content="Professional couch, sectional and upholstery cleaning in [Service Area]. Deep extraction, stain and odour removal, pet-safe products — we come to you." />
+  <meta name="theme-color" content="#101215" />
+  <link rel="canonical" href="https://www.example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="We Suck · Couch &amp; Upholstery Cleaning" />
+  <meta property="og:description" content="Deep-clean your couch without leaving home. Stain, odour and pet-hair removal across [Service Area]." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.example.com/" />
+  <meta property="og:image" content="https://www.example.com/images/hero.svg" />
+  <meta property="og:locale" content="en_CA" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="We Suck · Couch &amp; Upholstery Cleaning" />
+  <meta name="twitter:description" content="Deep-clean your couch without leaving home. Stain, odour and pet-hair removal across [Service Area]." />
+  <meta name="twitter:image" content="https://www.example.com/images/hero.svg" />
+
+  <!-- Structured data for local search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "We Suck",
+    "description": "Couch and upholstery cleaning",
+    "url": "https://www.example.com/",
+    "telephone": "+1-000-000-0000",
+    "email": "hello@example.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "[City]",
+      "addressRegion": "[Province]",
+      "addressCountry": "CA"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "[City]" }
+    ],
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261030-1" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='10' fill='%23101215'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-weight='700' font-size='46' fill='%233fb8e8' text-anchor='middle'%3EWS%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ===== Progress bar ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="brand" aria-label="We Suck home">
+        <span class="brand__text">
+          <span class="brand__name">We Suck</span>
+          <span class="brand__sub">Couch &amp; Upholstery Cleaning</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#results">Results</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact" class="nav__cta">Get a Quote</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content reveal">
+      <p class="hero__eyebrow">Mobile couch cleaning · [Service Area]</p>
+      <h1 class="hero__title">Your couch,<br /><em>like new again.</em></h1>
+      <p class="hero__lead">
+        Deep-clean extraction for couches, sectionals and upholstery — done right in
+        your living room. Stains, odours and pet hair, gone.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--gold">Get a Free Quote</a>
+        <a href="#results" class="btn btn--ghost">See Results</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll to next section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="about section" id="about">
+    <div class="about__grid">
+      <div class="about__media reveal">
+        <div class="about__photo">
+          <img src="images/owner.svg" alt="[Owner name], owner of We Suck" class="about__img" />
+        </div>
+        <div class="about__badge">
+          <img src="images/logo-placeholder.svg" alt="We Suck logo" class="about__badge-logo" />
+        </div>
+      </div>
+
+      <div class="about__body reveal">
+        <p class="eyebrow">About Us</p>
+        <h2 class="section__title">Locally owned. Seriously clean.</h2>
+        <p>
+          [Placeholder — owner story.] Hi, I'm [Owner name]. I started We Suck because
+          most couches never get a real clean — just a vacuum and a hope. We bring
+          professional extraction equipment to your door and pull out what's been
+          living deep in the fabric.
+        </p>
+        <p>
+          [Placeholder — values.] Every job gets a fabric check, a pre-treatment for
+          problem spots, and an honest conversation about what can and can't come out.
+          No surprises, no upsells — just a couch you'll want to sit on again.
+        </p>
+        <ul class="about__list">
+          <li>Fully mobile — we come to you</li>
+          <li>Pet- &amp; kid-safe cleaning products</li>
+          <li>Fabric, microfibre &amp; leather</li>
+          <li>Fast drying times</li>
+        </ul>
+        <a href="#contact" class="btn btn--dark">Book a Cleaning</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Stats band ===== -->
+  <!-- TODO: replace numbers with the client's real figures -->
+  <section class="stats">
+    <div class="stats__grid">
+      <div class="stat reveal">
+        <span class="stat__num" data-count="500">0</span><span class="stat__plus">+</span>
+        <span class="stat__label">Couches Cleaned</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-count="10">0</span><span class="stat__plus">+</span>
+        <span class="stat__label">Communities Served</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num">100</span><span class="stat__plus">%</span>
+        <span class="stat__label">Satisfaction Focus</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-count="5">0</span><span class="stat__plus">★</span>
+        <span class="stat__label">Star Reviews</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="services section" id="services">
+    <div class="services__head reveal">
+      <p class="eyebrow">Services</p>
+      <h2 class="section__title">What we clean</h2>
+    </div>
+    <div class="services__grid">
+      <a class="services__card reveal" href="#contact">
+        <span class="services__arrow" aria-hidden="true">&rarr;</span>
+        <div class="services__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 22h24v8H8zM10 22v-6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M5 20h3v10H5zM32 20h3v10h-3zM10 30v3M30 30v3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Couches &amp; Sofas</h3>
+        <p>Deep hot-water extraction that lifts years of dirt, body oils and allergens from the fabric.</p>
+      </a>
+      <a class="services__card reveal" href="#contact">
+        <span class="services__arrow" aria-hidden="true">&rarr;</span>
+        <div class="services__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 14h18v8h12v10H5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M5 22h18v10M23 14v8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Sectionals</h3>
+        <p>Every seat, cushion and corner of large sectionals and recliners — priced by the seat.</p>
+      </a>
+      <a class="services__card reveal" href="#contact">
+        <span class="services__arrow" aria-hidden="true">&rarr;</span>
+        <div class="services__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6c5 7 9 11.5 9 17a9 9 0 0 1-18 0c0-5.5 4-10 9-17Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M15.5 24a4.5 4.5 0 0 0 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Stain &amp; Odour</h3>
+        <p>Targeted treatment for spills, pet accidents, smoke and everyday smells — not just masked.</p>
+      </a>
+      <a class="services__card reveal" href="#contact">
+        <span class="services__arrow" aria-hidden="true">&rarr;</span>
+        <div class="services__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="14" width="28" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M6 22h28M10 28v4M30 28v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Mattresses &amp; More</h3>
+        <p>Mattresses, dining chairs, ottomans and car interiors — ask about anything with fabric.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Process ===== -->
+  <section class="approach section" id="process">
+    <div class="approach__head reveal">
+      <p class="eyebrow eyebrow--light">How It Works</p>
+      <h2 class="section__title section__title--light">Four steps to a fresh couch</h2>
+    </div>
+    <div class="approach__steps">
+      <div class="approach__step reveal">
+        <span class="approach__num">01</span>
+        <h3>Quote</h3>
+        <p>Send a photo or a few details and get a clear, upfront price — no hidden fees.</p>
+      </div>
+      <div class="approach__step reveal">
+        <span class="approach__num">02</span>
+        <h3>Inspect</h3>
+        <p>We check the fabric type and care tags, then test-spot so the right method is used.</p>
+      </div>
+      <div class="approach__step reveal">
+        <span class="approach__num">03</span>
+        <h3>Deep clean</h3>
+        <p>Pre-treatment, agitation and hot-water extraction pull dirt out — not just around.</p>
+      </div>
+      <div class="approach__step reveal">
+        <span class="approach__num">04</span>
+        <h3>Dry &amp; enjoy</h3>
+        <p>Low-moisture finish and groom for fast drying. Most couches are ready the same day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Results (before & after gallery) ===== -->
+  <section class="listings section" id="results">
+    <div class="listings__head reveal">
+      <p class="eyebrow">Results</p>
+      <h2 class="section__title">Before &amp; after</h2>
+      <p class="listings__lead">
+        Real jobs from around [Service Area]. Swipe through to see what a proper
+        deep clean can do.
+      </p>
+    </div>
+
+    <div class="listings__group">
+      <div class="listings__carousel" id="resultsCarousel">
+        <!-- TODO: replace images/before-after.svg with real before/after photos.
+             Duplicate an <article class="listing"> block to add more. -->
+        <div class="listings__grid" id="resultsGrid">
+          <article class="listing reveal">
+            <div class="listing__media">
+              <img src="images/before-after.svg" alt="Before and after — fabric sectional" loading="lazy" />
+              <span class="listing__status">Sectional</span>
+            </div>
+            <div class="listing__body">
+              <h3 class="listing__addr">Light grey fabric sectional</h3>
+              <p class="listing__city">[City]</p>
+              <ul class="listing__specs"><li>Deep extraction</li><li>Coffee stains</li></ul>
+            </div>
+          </article>
+          <article class="listing reveal">
+            <div class="listing__media">
+              <img src="images/before-after.svg" alt="Before and after — microfibre loveseat" loading="lazy" />
+              <span class="listing__status">Loveseat</span>
+            </div>
+            <div class="listing__body">
+              <h3 class="listing__addr">Microfibre loveseat</h3>
+              <p class="listing__city">[City]</p>
+              <ul class="listing__specs"><li>Pet hair</li><li>Odour treatment</li></ul>
+            </div>
+          </article>
+          <article class="listing reveal">
+            <div class="listing__media">
+              <img src="images/before-after.svg" alt="Before and after — three-seat sofa" loading="lazy" />
+              <span class="listing__status">Sofa</span>
+            </div>
+            <div class="listing__body">
+              <h3 class="listing__addr">Beige three-seat sofa</h3>
+              <p class="listing__city">[City]</p>
+              <ul class="listing__specs"><li>Body-oil buildup</li><li>Groomed finish</li></ul>
+            </div>
+          </article>
+          <article class="listing reveal">
+            <div class="listing__media">
+              <img src="images/before-after.svg" alt="Before and after — dining chairs" loading="lazy" />
+              <span class="listing__status">Chairs</span>
+            </div>
+            <div class="listing__body">
+              <h3 class="listing__addr">Set of 6 dining chairs</h3>
+              <p class="listing__city">[City]</p>
+              <ul class="listing__specs"><li>Food stains</li><li>Spot treatment</li></ul>
+            </div>
+          </article>
+          <article class="listing reveal">
+            <div class="listing__media">
+              <img src="images/before-after.svg" alt="Before and after — queen mattress" loading="lazy" />
+              <span class="listing__status">Mattress</span>
+            </div>
+            <div class="listing__body">
+              <h3 class="listing__addr">Queen mattress</h3>
+              <p class="listing__city">[City]</p>
+              <ul class="listing__specs"><li>Sanitize</li><li>Deodorize</li></ul>
+            </div>
+          </article>
+        </div>
+        <button class="listings__edge listings__edge--prev" id="resultsPrev" type="button" aria-label="Scroll to previous results" hidden></button>
+        <button class="listings__edge listings__edge--next" id="resultsNext" type="button" aria-label="Scroll to more results" hidden></button>
+      </div>
+    </div>
+
+    <div class="listings__more reveal">
+      <p class="eyebrow listings__more-eyebrow">More on social</p>
+      <div class="listings__more-links">
+        <!-- TODO: real social links -->
+        <a class="listings__more-link" href="#" target="_blank" rel="noopener">Instagram ↗</a>
+        <a class="listings__more-link" href="#" target="_blank" rel="noopener">Facebook ↗</a>
+        <a class="listings__more-link" href="#" target="_blank" rel="noopener">TikTok ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Areas banner ===== -->
+  <section class="areas-banner" id="areas">
+    <div class="areas-banner__overlay" aria-hidden="true"></div>
+    <div class="areas-banner__inner reveal">
+      <p class="eyebrow eyebrow--light">Where We Work</p>
+      <h2 class="section__title section__title--light">Serving [Service Area]</h2>
+      <p class="areas-banner__lead">We bring the equipment to you across [City] and surrounding communities. Not sure if you're in range? Just ask.</p>
+    </div>
+  </section>
+
+  <!-- ===== Reviews ===== -->
+  <section class="reviews section" id="reviews">
+    <div class="reviews__head reveal">
+      <p class="eyebrow">Testimonials</p>
+      <h2 class="section__title">What customers are saying</h2>
+    </div>
+
+    <div class="reviews__carousel" id="reviewsCarousel">
+      <div class="reviews__track" id="reviewsTrack">
+        <!-- PLACEHOLDER reviews — replace with real customer testimonials before launch.
+             JS duplicates this set automatically for a seamless loop; edit only this original set. -->
+        <article class="review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review__quote">“Placeholder review — a short quote from a happy customer about how clean their couch turned out.”</p>
+          <div class="review__author">
+            <span class="review__avatar" aria-hidden="true">C&nbsp;N</span>
+            <span class="review__name">Customer Name</span>
+          </div>
+        </article>
+        <article class="review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review__quote">“Placeholder review — mention of pet hair or odour removal and how easy booking was.”</p>
+          <div class="review__author">
+            <span class="review__avatar" aria-hidden="true">C&nbsp;N</span>
+            <span class="review__name">Customer Name</span>
+          </div>
+        </article>
+        <article class="review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review__quote">“Placeholder review — something about showing up on time, being professional, and fast drying.”</p>
+          <div class="review__author">
+            <span class="review__avatar" aria-hidden="true">C&nbsp;N</span>
+            <span class="review__name">Customer Name</span>
+          </div>
+        </article>
+        <article class="review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review__quote">“Placeholder review — a before/after reaction, e.g. didn't realize what colour the couch actually was.”</p>
+          <div class="review__author">
+            <span class="review__avatar" aria-hidden="true">C&nbsp;N</span>
+            <span class="review__name">Customer Name</span>
+          </div>
+        </article>
+        <article class="review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review__quote">“Placeholder review — would recommend to friends and family, will book again.”</p>
+          <div class="review__author">
+            <span class="review__avatar" aria-hidden="true">C&nbsp;N</span>
+            <span class="review__name">Customer Name</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="reviews__cta reveal">
+      <!-- TODO: Google review link -->
+      <a href="#" class="reviews__cta-link" target="_blank" rel="noopener">Leave us a Google review ↗</a>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact section" id="contact">
+    <div class="contact__grid">
+      <div class="contact__intro reveal">
+        <p class="eyebrow eyebrow--light">Free Quote</p>
+        <h2 class="section__title section__title--light">Let's freshen things up.</h2>
+        <p class="contact__lead">Tell us what you'd like cleaned and we'll get back to you with a price and the next available time. Photos help — feel free to mention any stains or problem spots.</p>
+      </div>
+
+      <!-- TODO: set the form action to the real endpoint (Google Apps Script, Formspree, etc.) -->
+      <form class="contact__form reveal" id="contactForm" action="YOUR_FORM_ENDPOINT" method="POST">
+        <input type="hidden" name="_subject" value="New quote request from the website" />
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;" />
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required placeholder="e.g. Jane Doe" />
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required placeholder="you@email.com" />
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required placeholder="(000) 000-0000" />
+        </div>
+        <div class="field">
+          <label for="interest">What needs cleaning?</label>
+          <select id="interest" name="interest">
+            <option value="Couch">Couch / sofa</option>
+            <option value="Sectional">Sectional</option>
+            <option value="Loveseat or chair">Loveseat or chair</option>
+            <option value="Mattress">Mattress</option>
+            <option value="Other">Something else</option>
+          </select>
+        </div>
+        <div class="field" id="seatsField" hidden>
+          <label for="seats">How many seats?</label>
+          <select id="seats" name="seats" disabled>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6+">6 or more</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Anything we should know?</label>
+          <textarea id="message" name="message" rows="4" placeholder="Fabric type, stains, pets, preferred dates…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--gold btn--block" id="formSubmit">Request my quote</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        <p class="contact__formnote">Prefer to talk? Call or text <a href="tel:+10000000000">(000) 000-0000</a>.</p>
+      </form>
+
+      <div class="contact__details-wrap reveal">
+        <ul class="contact__details">
+          <li>
+            <span class="contact__label">Call or text</span>
+            <a href="tel:+10000000000">(000) 000-0000</a>
+          </li>
+          <li>
+            <span class="contact__label">Email</span>
+            <a href="mailto:hello@example.com">hello@example.com</a>
+          </li>
+          <li>
+            <span class="contact__label">Business hours</span>
+            <span class="contact__hours">Monday to Saturday · 8am – 6pm<br />Sunday · Closed</span>
+          </li>
+        </ul>
+
+        <div class="contact__social">
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+          <a href="#" target="_blank" rel="noopener" aria-label="TikTok">TikTok</a>
+        </div>
+
+        <img src="images/logo-placeholder.svg" alt="We Suck logo" class="contact__logo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div>
+          <strong>We Suck</strong>
+          <span>Couch &amp; Upholstery Cleaning</span>
+        </div>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#results">Results</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Get a Quote</a>
+      </nav>
+      <p class="footer__legal">
+        © <span id="year"></span> We Suck Couch Cleaning. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=20261030-1"></script>
+</body>
+</html>
