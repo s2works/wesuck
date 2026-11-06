@@ -46,3 +46,14 @@ python3 -m http.server 8000
 - `images/hero-sectional.jpg`, `sectional-*.jpg`, `banner-sectional.jpg`, `loveseat-cleaning.jpg` — client photos.
 - `images/stock-*.jpg` — free stock photos from [Unsplash](https://unsplash.com) (Unsplash License), used as placeholders
   on the service cards and the contact section background. Swap for client photos when available.
+
+## Next up (pending from client)
+
+- **Before/after photo pairs** — same couch, same spot and angle, one before and one after cleaning.
+  Upload them, then: swap both images in the `.ba` slider in `index.html` (Recent work section),
+  remove the `is-placeholder` class from the "before" image, and consider one slider per job
+  and/or a slider as the hero image.
+- Real prices (`$XX`), Google rating + review count, real reviews, owner photo, towns, phone/email.
+- Form endpoint for both quote forms (`YOUR_FORM_ENDPOINT`).
+- Vercel: link the GitHub repo (Settings → Git, production branch `main`) and turn off
+  Deployment Protection before sharing with the client. GitHub: set default branch to `main`.
