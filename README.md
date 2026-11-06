@@ -1,13 +1,13 @@
 # We Suck — Couch & Upholstery Cleaning
 
 Landing page for a mobile couch / upholstery cleaning business.
-Built from the same layout and flow as the Cédric LeBlanc REALTOR® site, re-themed dark.
+Started from the Cédric LeBlanc REALTOR® site's structure, then reworked into a conversion-focused service site.
 
 ## Highlights
 
 - **Single-page, no build step** — plain HTML/CSS/JS, deploys anywhere (Vercel, Netlify, any static host).
-- **Dark theme** — colour tokens live at the top of `styles.css` (`:root`), so the accent and surfaces can be re-branded in one place.
-- **Same flow** — Hero → About → Stats → Services → How It Works → Before & After → Service Area → Reviews → Quote form → Footer.
+- **Dark theme, lime accent** — colour tokens live at the top of `styles.css` (`:root`), so the accent and surfaces can be re-branded in one place. Fonts: Archivo (headings) + DM Sans (body).
+- **Flow** — Hero + quick quote form → Trust bar → Ticker → Services → Recent work → How it works → Pricing → Reviews → About → Service area → FAQ → Quote form → Footer, plus a sticky Call / Quote bar on phones.
 - **Motion** — scroll reveals, animated stat counters, hero parallax & zoom, sticky nav, scroll-progress bar, auto-scrolling reviews.
 - **Responsive & accessible** — slide-in mobile menu, focus states, `prefers-reduced-motion` support.
 
@@ -22,14 +22,15 @@ Built from the same layout and flow as the Cédric LeBlanc REALTOR® site, re-th
 
 ## ⚠️ Placeholders to replace before launch
 
-Search the project for `[`, `TODO`, `PLACEHOLDER`, `example.com` and `000-0000`.
+Search the project for `[`, `$XX`, `TODO`, `PLACEHOLDER`, `example.com` and `000-0000`.
 
 - **Business details** — service area / city, owner name, phone, email, hours, social links, Google review link.
 - **Images** — `images/hero.svg`, `images/owner.svg`, `images/before-after.svg`, `images/logo-placeholder.svg`.
   Drop real photos in `images/` and update the paths in `index.html` / `styles.css` (`.hero__bg`, `.areas-banner`).
-- **Stats** — the numbers in the stats band.
+- **Stats & prices** — the trust-bar numbers and every `$XX` price (service cards + pricing section).
+- **FAQ answers** — confirm drying time, payment methods, etc.
 - **Reviews** — the testimonials are placeholders; replace with real customer reviews.
-- **Quote form** — `action="YOUR_FORM_ENDPOINT"` in `index.html`. Until it's set, submitting shows a
+- **Quote forms** — both forms (hero quick quote + main form) have `action="YOUR_FORM_ENDPOINT"` in `index.html`; a hidden `source` field tells you which one was used. Until it's set, submitting shows a
   "form isn't connected yet" message instead of pretending to send.
 - **Domain** — `example.com` in the `<head>` meta tags, `robots.txt` and `sitemap.xml`.
 
