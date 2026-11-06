@@ -14,14 +14,14 @@
   <meta property="og:description" content="Deep-clean your couch without leaving home. Stain, odour and pet-hair removal across [Service Area]." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.example.com/" />
-  <meta property="og:image" content="https://www.example.com/images/hero.svg" />
+  <meta property="og:image" content="https://www.example.com/images/hero-sectional.jpg" />
   <meta property="og:locale" content="en_CA" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="We Suck · Couch &amp; Upholstery Cleaning" />
   <meta name="twitter:description" content="Deep-clean your couch without leaving home. Stain, odour and pet-hair removal across [Service Area]." />
-  <meta name="twitter:image" content="https://www.example.com/images/hero.svg" />
+  <meta name="twitter:image" content="https://www.example.com/images/hero-sectional.jpg" />
 
   <!-- Structured data for local search -->
   <script type="application/ld+json">
@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261106-1" />
+  <link rel="stylesheet" href="styles.css?v=20261106-2" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='10' fill='%23101215'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-weight='700' font-size='46' fill='%233fb8e8' text-anchor='middle'%3EWS%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
@@ -105,7 +105,8 @@
     <div class="about__grid">
       <div class="about__media reveal">
         <div class="about__photo">
-          <img src="images/owner.svg" alt="[Owner name], owner of We Suck" class="about__img" />
+          <!-- TODO: swap for a photo of the owner / team -->
+          <img src="images/loveseat-cleaning.jpg" alt="Loveseat mid-clean with cushions lifted and extraction equipment ready" class="about__img" />
         </div>
         <div class="about__badge">
           <img src="images/logo-white.png" alt="We Suck logo" class="about__badge-logo" />
@@ -244,75 +245,63 @@
     </div>
   </section>
 
-  <!-- ===== Results (before & after gallery) ===== -->
+  <!-- ===== Results (recent work gallery) ===== -->
   <section class="listings section" id="results">
     <div class="listings__head reveal">
       <p class="eyebrow">Results</p>
-      <h2 class="section__title">Before &amp; after</h2>
+      <h2 class="section__title">Recent work</h2>
       <p class="listings__lead">
-        Real jobs from around [Service Area]. Swipe through to see what a proper
-        deep clean can do.
+        A few of the couches and sectionals we've cleaned around [Service Area].
+        Swipe through to see more.
       </p>
     </div>
 
     <div class="listings__group">
       <div class="listings__carousel" id="resultsCarousel">
-        <!-- TODO: replace images/before-after.svg with real before/after photos.
-             Duplicate an <article class="listing"> block to add more. -->
+        <!-- Duplicate an <article class="listing"> block to add more jobs (before/after pairs work great here). -->
         <div class="listings__grid" id="resultsGrid">
           <article class="listing reveal">
             <div class="listing__media">
-              <img src="images/before-after.svg" alt="Before and after — fabric sectional" loading="lazy" />
+              <img src="images/sectional-4-seat.jpg" alt="Grey fabric sectional with ottoman" loading="lazy" />
               <span class="listing__status">Sectional</span>
             </div>
             <div class="listing__body">
-              <h3 class="listing__addr">Light grey fabric sectional</h3>
+              <h3 class="listing__addr">Grey 4-seat sectional + ottoman</h3>
               <p class="listing__city">[City]</p>
-              <ul class="listing__specs"><li>Deep extraction</li><li>Coffee stains</li></ul>
+              <ul class="listing__specs"><li>Deep extraction</li><li>Ottoman included</li></ul>
             </div>
           </article>
           <article class="listing reveal">
             <div class="listing__media">
-              <img src="images/before-after.svg" alt="Before and after — microfibre loveseat" loading="lazy" />
+              <img src="images/sectional-l-shaped.jpg" alt="Charcoal L-shaped sectional" loading="lazy" />
+              <span class="listing__status">L-shaped</span>
+            </div>
+            <div class="listing__body">
+              <h3 class="listing__addr">Charcoal L-shaped sectional</h3>
+              <p class="listing__city">[City]</p>
+              <ul class="listing__specs"><li>Tufted cushions</li><li>Groomed finish</li></ul>
+            </div>
+          </article>
+          <article class="listing reveal">
+            <div class="listing__media">
+              <img src="images/sectional-6-seat.jpg" alt="Large brown six-seat U-shaped sectional" loading="lazy" />
+              <span class="listing__status">6-seater</span>
+            </div>
+            <div class="listing__body">
+              <h3 class="listing__addr">Brown 6-seat U-shaped sectional</h3>
+              <p class="listing__city">[City]</p>
+              <ul class="listing__specs"><li>Full sectional</li><li>Odour treatment</li></ul>
+            </div>
+          </article>
+          <article class="listing reveal">
+            <div class="listing__media">
+              <img src="images/loveseat-cleaning.jpg" alt="Navy loveseat with cushions lifted for cleaning" loading="lazy" />
               <span class="listing__status">Loveseat</span>
             </div>
             <div class="listing__body">
-              <h3 class="listing__addr">Microfibre loveseat</h3>
+              <h3 class="listing__addr">Navy fabric loveseat</h3>
               <p class="listing__city">[City]</p>
-              <ul class="listing__specs"><li>Pet hair</li><li>Odour treatment</li></ul>
-            </div>
-          </article>
-          <article class="listing reveal">
-            <div class="listing__media">
-              <img src="images/before-after.svg" alt="Before and after — three-seat sofa" loading="lazy" />
-              <span class="listing__status">Sofa</span>
-            </div>
-            <div class="listing__body">
-              <h3 class="listing__addr">Beige three-seat sofa</h3>
-              <p class="listing__city">[City]</p>
-              <ul class="listing__specs"><li>Body-oil buildup</li><li>Groomed finish</li></ul>
-            </div>
-          </article>
-          <article class="listing reveal">
-            <div class="listing__media">
-              <img src="images/before-after.svg" alt="Before and after — dining chairs" loading="lazy" />
-              <span class="listing__status">Chairs</span>
-            </div>
-            <div class="listing__body">
-              <h3 class="listing__addr">Set of 6 dining chairs</h3>
-              <p class="listing__city">[City]</p>
-              <ul class="listing__specs"><li>Food stains</li><li>Spot treatment</li></ul>
-            </div>
-          </article>
-          <article class="listing reveal">
-            <div class="listing__media">
-              <img src="images/before-after.svg" alt="Before and after — queen mattress" loading="lazy" />
-              <span class="listing__status">Mattress</span>
-            </div>
-            <div class="listing__body">
-              <h3 class="listing__addr">Queen mattress</h3>
-              <p class="listing__city">[City]</p>
-              <ul class="listing__specs"><li>Sanitize</li><li>Deodorize</li></ul>
+              <ul class="listing__specs"><li>Under-cushion clean</li><li>Spot treatment</li></ul>
             </div>
           </article>
         </div>

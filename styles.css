@@ -278,8 +278,7 @@ body.menu-open::before {
 }
 .hero__bg {
   position: absolute; inset: 0;
-  /* TODO: swap for the real hero photo, e.g. url("images/hero.jpg") */
-  background: url("images/hero.svg") center/cover no-repeat;
+  background: url("images/hero-sectional.jpg") center 60%/cover no-repeat;
   transform: scale(1.08);
   will-change: transform;
   animation: heroZoom 18s ease-in-out infinite alternate;
@@ -369,7 +368,7 @@ body.menu-open::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
 }
 .about__badge {
   position: absolute;
@@ -707,10 +706,9 @@ body.menu-open::before {
   isolation: isolate;
   overflow: hidden;
   padding: clamp(4.5rem, 10vw, 8rem) clamp(1.25rem, 5vw, 4rem);
-  /* TODO: swap for a real local/area photo */
   background:
-    linear-gradient(120deg, rgba(8,9,11,0.92), rgba(8,9,11,0.78)),
-    url("images/hero.svg") center/cover no-repeat;
+    linear-gradient(120deg, rgba(8,9,11,0.9), rgba(8,9,11,0.72)),
+    url("images/banner-sectional.jpg") center/cover no-repeat;
   border-block: 1px solid var(--line);
 }
 .areas-banner__overlay {
