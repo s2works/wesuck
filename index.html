@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261106-5" />
+  <link rel="stylesheet" href="styles.css?v=20261106-6" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230e0f11'/%3E%3Ctext x='50' y='66' font-family='Arial,sans-serif' font-weight='900' font-size='44' fill='%23c6f432' text-anchor='middle'%3EWS%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
@@ -235,7 +235,21 @@
         <p class="eyebrow">Results</p>
         <h2 class="section__title">Recent <em>work</em></h2>
       </div>
-      <p class="section__lead">A few of the couches and sectionals we've cleaned around [Service Area]. Swipe for more.</p>
+      <p class="section__lead">Drag the slider to see the difference a deep clean makes — then swipe through more recent jobs from around [Service Area].</p>
+    </div>
+
+    <!-- Before / after slider.
+         PLACEHOLDER: both sides use the same photo, and the "before" side is darkened with CSS
+         (.ba__before.is-placeholder). Swap in a real before/after pair and remove "is-placeholder". -->
+    <div class="ba reveal" style="--pos: 50%">
+      <img class="ba__after" src="images/sectional-4-seat.jpg" alt="After cleaning: grey sectional and ottoman" />
+      <div class="ba__before-wrap" aria-hidden="true">
+        <img class="ba__before is-placeholder" src="images/sectional-4-seat.jpg" alt="" />
+      </div>
+      <span class="ba__label ba__label--before">Before</span>
+      <span class="ba__label ba__label--after">After</span>
+      <div class="ba__handle" aria-hidden="true"><span></span></div>
+      <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after" />
     </div>
 
     <div class="results__carousel" id="resultsCarousel">
@@ -460,9 +474,7 @@
       <h2 class="section__title">Serving <em>[Service Area]</em></h2>
       <p class="area__lead">We bring the equipment to you. Not sure if you're in range? Just ask.</p>
       <!-- TODO: real towns -->
-      <ul class="area__chips">
-        <li>[City]</li><li>[Town]</li><li>[Town]</li><li>[Town]</li><li>[Town]</li><li>&amp; surrounding areas</li>
-      </ul>
+      <p class="area__towns">[City] · [Town] · [Town] · [Town] · [Town] &amp; surrounding areas</p>
     </div>
   </section>
 
@@ -616,6 +628,6 @@
     <a href="#contact" class="sticky-cta__quote">Get a free quote</a>
   </div>
 
-  <script src="script.js?v=20261106-4"></script>
+  <script src="script.js?v=20261106-6"></script>
 </body>
 </html>

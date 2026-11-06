@@ -83,7 +83,7 @@ h1, h2, h3 {
   margin-inline: auto;
 }
 
-/* Section header: chip eyebrow + big mixed-case title with lime highlight */
+/* Section header: small label + big mixed-case title with lime highlight */
 .section__head { max-width: 680px; margin-bottom: clamp(2rem, 4vw, 3rem); }
 .section__head--row {
   max-width: none;
@@ -96,26 +96,14 @@ h1, h2, h3 {
 .section__head--row .section__title { margin-bottom: 0; }
 .section__head--row .section__lead { max-width: 40ch; }
 
+/* Plain-text section label (same quiet style as the hero rating line) */
 .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  padding: 0.4rem 0.85rem;
-  border: 1px solid var(--line-2);
-  border-radius: 100px;
-  font-size: 0.74rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--heading);
-  margin: 0 0 1.1rem;
-}
-.eyebrow::before {
-  content: "";
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 12px var(--accent);
+  color: var(--accent);
+  margin: 0 0 0.9rem;
 }
 
 .section__title {
@@ -472,6 +460,64 @@ body.menu-open::before {
 .work h3 { font-size: 1.1rem; letter-spacing: -0.015em; }
 .work__meta { color: var(--muted); font-size: 0.86rem; margin: 0.35rem 0 0; }
 
+/* Before / after slider */
+.ba {
+  position: relative;
+  aspect-ratio: 16 / 8;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  background: var(--surface-2);
+  box-shadow: var(--shadow);
+  user-select: none;
+}
+.ba img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ba__before-wrap { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.ba__before.is-placeholder { filter: sepia(0.7) saturate(0.85) brightness(0.55) contrast(0.88); }
+.ba__label {
+  position: absolute;
+  top: 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
+  pointer-events: none;
+}
+.ba__label--before { left: 1.2rem; }
+.ba__label--after { right: 1.2rem; color: var(--accent); }
+.ba__handle {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: var(--pos);
+  width: 2px;
+  margin-left: -1px;
+  background: #fff;
+  pointer-events: none;
+}
+.ba__handle span {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 46px; height: 46px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230e0f11' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 7l-5 5 5 5M15 7l5 5-5 5'/%3E%3C/svg%3E") center/22px no-repeat;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+/* Invisible range input over the whole image does the dragging (mouse, touch and keyboard) */
+.ba__range {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.ba:has(.ba__range:focus-visible) .ba__handle span { outline: 3px solid #fff; outline-offset: 3px; }
+
 .results__nav { display: flex; justify-content: flex-end; gap: 0.6rem; margin-top: 1.2rem; }
 .results__nav[hidden] { display: none; }
 .round-btn {
@@ -671,17 +717,7 @@ body.menu-open::before {
 }
 .area__inner { max-width: 760px; margin-inline: auto; text-align: center; }
 .area__lead { color: rgba(255,255,255,0.8); font-size: 1.1rem; margin: 0 auto 1.8rem; }
-.area__chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; }
-.area__chips li {
-  padding: 0.55rem 1.1rem;
-  border-radius: 100px;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid var(--line-2);
-  backdrop-filter: blur(6px);
-  font-weight: 600;
-  font-size: 0.92rem;
-  color: #fff;
-}
+.area__towns { margin: 0; font-weight: 600; color: #fff; font-size: 1.02rem; }
 
 /* ---------- FAQ ---------- */
 .faq__grid {
@@ -950,6 +986,7 @@ body.menu-open::before {
   .about__badge img { width: 74px; }
   .field-row { grid-template-columns: 1fr; }
   .review { flex-basis: 80vw; }
+  .ba { aspect-ratio: 4 / 3; }
   .footer__inner { grid-template-columns: 1fr; }
   .contact__details a { font-size: 1.3rem; word-break: break-word; }
 }

@@ -227,6 +227,15 @@
     document.getElementById("resultsNext")
   );
 
+  /* ---------- Before / after slider ---------- */
+  document.querySelectorAll(".ba").forEach(function (ba) {
+    var range = ba.querySelector(".ba__range");
+    if (!range) return;
+    function set() { ba.style.setProperty("--pos", range.value + "%"); }
+    range.addEventListener("input", set);
+    set();
+  });
+
   /* ---------- Reviews marquee (continuous auto-scroll) ---------- */
   var reviewsTrack = document.getElementById("reviewsTrack");
   if (reviewsTrack) {
