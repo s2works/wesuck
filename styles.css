@@ -192,6 +192,12 @@ body.menu-open::before {
 }
 
 .brand { display: flex; align-items: center; gap: 0.75rem; }
+.brand__logo {
+  height: 80px;
+  width: auto;
+  transition: height 0.5s var(--ease);
+}
+.nav.scrolled .brand__logo { height: 62px; }
 .brand__text { display: flex; flex-direction: column; line-height: 1.2; }
 .brand__name {
   font-family: var(--font-serif);
@@ -973,6 +979,7 @@ body.menu-open::before {
 }
 
 @media (max-width: 720px) {
+  .brand__logo, .nav.scrolled .brand__logo { height: 58px; }
   .nav__links {
     position: fixed;
     top: 0; right: 0; bottom: 0;
