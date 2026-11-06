@@ -39,3 +39,9 @@ Search the project for `[`, `TODO`, `PLACEHOLDER`, `example.com` and `000-0000`.
 python3 -m http.server 8000
 # then open http://localhost:8000
 ```
+
+## Photo credits
+
+- `images/hero-sectional.jpg`, `sectional-*.jpg`, `banner-sectional.jpg`, `loveseat-cleaning.jpg` — client photos.
+- `images/stock-*.jpg` — free stock photos from [Unsplash](https://unsplash.com) (Unsplash License), used as placeholders
+  on the service cards and the contact section background. Swap for client photos when available.
