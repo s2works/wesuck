@@ -1,20 +1,20 @@
 /* ============================================================
    We Suck — Couch & Rug Cleaning
-   Dark theme · client navy/gold palette (lime backup theme) · Archivo + DM Sans
+   Dark theme · client charcoal/gold palette (navy + lime option themes) · Archivo + DM Sans
    ============================================================ */
 
-/* Client palette (default): navy #1b2a4a · gold #a4873e · lavender white #e5e6f9 · charcoal #333333 */
+/* Client palette (default): charcoal #333333 · gold #a4873e · lavender white #e5e6f9 · navy #1b2a4a */
 :root {
   /* Surfaces (darkest → lightest) */
-  --bg-deep:   #333333;
-  --bg:        #1b2a4a;
-  --bg-alt:    #203152;
-  --surface:   #22355b;
-  --surface-2: #2b4170;
-  --bg-rgb:      27, 42, 74;
-  --surface-rgb: 34, 53, 91;
+  --bg-deep:   #1b2a4a;
+  --bg:        #333333;
+  --bg-alt:    #383838;
+  --surface:   #3c3c3d;
+  --surface-2: #464648;
+  --bg-rgb:      51, 51, 51;
+  --surface-rgb: 60, 60, 61;
 
-  /* Accent — gold; --accent-text is a lighter tint so small gold text stays readable on navy */
+  /* Accent — gold; --accent-text is a lighter tint so small gold text stays readable on dark backgrounds */
   --accent:      #a4873e;
   --accent-rgb:  164, 135, 62;
   --accent-text: #c9ad66;
@@ -23,8 +23,8 @@
 
   /* Text */
   --heading: #e5e6f9;
-  --text:    #c9cbe2;
-  --muted:   #959ab9;
+  --text:    #d2d3e0;
+  --muted:   #a2a3b0;
   --line:    rgba(229, 230, 249, 0.10);
   --line-2:  rgba(229, 230, 249, 0.18);
 
@@ -40,6 +40,19 @@
   --gutter: clamp(1.25rem, 5vw, 4rem);
 
   color-scheme: dark;
+}
+
+/* Option: navy as the main colour. Preview it with ?theme=navy */
+:root[data-theme="navy"] {
+  --bg-deep:   #333333;
+  --bg:        #1b2a4a;
+  --bg-alt:    #203152;
+  --surface:   #22355b;
+  --surface-2: #2b4170;
+  --bg-rgb:      27, 42, 74;
+  --surface-rgb: 34, 53, 91;
+  --text:    #c9cbe2;
+  --muted:   #959ab9;
 }
 
 /* Backup theme: the original near-black + electric lime look. Preview it with ?theme=lime */
