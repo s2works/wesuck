@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- TODO: replace every "[...]" / "$XX" placeholder with the client's real details -->
+  <!-- TODO: replace every "[...]" placeholder with the client's real details -->
   <title>We Suck · Couch &amp; Rug Cleaning | [Service Area]</title>
   <meta name="description" content="Professional couch, sectional and rug cleaning in [Service Area]. Deep extraction, stain and odour removal, pet-safe products — we come to you. Get a free quote." />
   <meta name="theme-color" content="#333333" />
@@ -58,7 +58,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261117-2" />
+  <link rel="stylesheet" href="styles.css?v=20261117-3" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23333333'/%3E%3Ctext x='50' y='66' font-family='Arial,sans-serif' font-weight='900' font-size='44' fill='%23a4873e' text-anchor='middle'%3EWS%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
@@ -73,7 +73,6 @@
       <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#results">Results</a>
-        <a href="#pricing">Pricing</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
         <a href="tel:+10000000000" class="nav__phone">
@@ -143,7 +142,7 @@
             <option value="Other">Something else</option>
           </select>
         </div>
-        <button type="submit" class="btn btn--accent btn--block">Get my price</button>
+        <button type="submit" class="btn btn--accent btn--block">Get my free quote</button>
         <p class="form-status" role="status" aria-live="polite"></p>
       </form>
     </div>
@@ -196,7 +195,6 @@
           <h3>Couches &amp; Sofas</h3>
           <p>Hot-water extraction that lifts years of dirt, body oils and allergens out of the fabric.</p>
           <div class="service__foot">
-            <span class="service__price">From <strong>$XX</strong></span>
             <span class="service__link">Get a quote <span aria-hidden="true">→</span></span>
           </div>
         </div>
@@ -205,9 +203,8 @@
         <div class="service__media"><img src="images/stock-sectional-dark.jpg" alt="Dark fabric sectional in a modern living room" loading="lazy" /></div>
         <div class="service__body">
           <h3>Sectionals</h3>
-          <p>Every seat, cushion and corner of large sectionals and recliners — priced by the seat.</p>
+          <p>Every seat, cushion and corner of large sectionals and recliners — no corner missed.</p>
           <div class="service__foot">
-            <span class="service__price">From <strong>$XX</strong>/seat</span>
             <span class="service__link">Get a quote <span aria-hidden="true">→</span></span>
           </div>
         </div>
@@ -218,7 +215,6 @@
           <h3>Stain &amp; Odour</h3>
           <p>Targeted treatment for spills, pet accidents, smoke and everyday smells — not just masked.</p>
           <div class="service__foot">
-            <span class="service__price">Add-on <strong>$XX</strong></span>
             <span class="service__link">Get a quote <span aria-hidden="true">→</span></span>
           </div>
         </div>
@@ -229,7 +225,6 @@
           <h3>Rugs &amp; More</h3>
           <p>Area rugs, mattresses, dining chairs and ottomans — ask about anything with fabric.</p>
           <div class="service__foot">
-            <span class="service__price">From <strong>$XX</strong></span>
             <span class="service__link">Get a quote <span aria-hidden="true">→</span></span>
           </div>
         </div>
@@ -326,7 +321,7 @@
       <li class="step reveal">
         <span class="step__num">01</span>
         <h3>Get a quote</h3>
-        <p>Send a photo or a few details. You get a clear, upfront price — no hidden fees.</p>
+        <p>Send a photo or a few details. You get a clear, no-obligation quote — no hidden fees.</p>
       </li>
       <li class="step reveal">
         <span class="step__num">02</span>
@@ -344,51 +339,6 @@
         <p>Low-moisture finish for fast drying. Most couches are ready to use the same day.</p>
       </li>
     </ol>
-  </section>
-
-  <!-- ===== Pricing ===== -->
-  <!-- TODO: confirm real prices with the client (all "$XX" values are placeholders) -->
-  <section class="pricing section" id="pricing">
-    <div class="section__head reveal">
-      <p class="eyebrow">Pricing</p>
-      <h2 class="section__title">Simple, <em>upfront</em> pricing</h2>
-      <p class="section__lead">Final price depends on size and condition — send a photo for an exact quote.</p>
-    </div>
-    <div class="pricing__grid">
-      <div class="plan reveal">
-        <h3 class="plan__name">Loveseat or chair</h3>
-        <p class="plan__price"><span>from</span> $XX</p>
-        <ul class="plan__list">
-          <li>Pre-treatment &amp; spot cleaning</li>
-          <li>Hot-water extraction</li>
-          <li>Deodorize &amp; groom</li>
-        </ul>
-        <a href="#contact" class="btn btn--outline btn--block" data-interest="Loveseat or chair">Get a quote</a>
-      </div>
-      <div class="plan plan--featured reveal">
-        <span class="plan__badge">Most popular</span>
-        <h3 class="plan__name">Couch / sofa</h3>
-        <p class="plan__price"><span>from</span> $XX</p>
-        <ul class="plan__list">
-          <li>Everything in Loveseat</li>
-          <li>Cushions cleaned both sides</li>
-          <li>Under-cushion vacuum</li>
-          <li>Fast-dry finish</li>
-        </ul>
-        <a href="#contact" class="btn btn--accent btn--block" data-interest="Couch">Get a quote</a>
-      </div>
-      <div class="plan reveal">
-        <h3 class="plan__name">Sectional</h3>
-        <p class="plan__price"><span>from</span> $XX<small>/seat</small></p>
-        <ul class="plan__list">
-          <li>Everything in Couch</li>
-          <li>Chaise &amp; ottoman options</li>
-          <li>Recliners welcome</li>
-        </ul>
-        <a href="#contact" class="btn btn--outline btn--block" data-interest="Sectional">Get a quote</a>
-      </div>
-    </div>
-    <p class="pricing__addons reveal"><strong>Add-ons:</strong> pet odour treatment · fabric protector · ottomans · throw pillows · area rugs</p>
   </section>
 
   <!-- ===== Reviews ===== -->
@@ -531,7 +481,7 @@
       <div class="contact__intro reveal">
         <p class="eyebrow">Free quote</p>
         <h2 class="section__title">Let's freshen <em>things up.</em></h2>
-        <p class="contact__lead">Tell us what you'd like cleaned and we'll get back to you with a price and the next available time — usually within [X] hours.</p>
+        <p class="contact__lead">Tell us what you'd like cleaned and we'll get back to you with a free quote and the next available time — usually within [X] hours.</p>
 
         <ul class="contact__details">
           <li>
@@ -618,7 +568,6 @@
       <nav class="footer__links" aria-label="Footer">
         <a href="#services">Services</a>
         <a href="#results">Results</a>
-        <a href="#pricing">Pricing</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Free Quote</a>

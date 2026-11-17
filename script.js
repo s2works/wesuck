@@ -160,7 +160,7 @@
     });
   });
 
-  // Service / pricing buttons pre-select what needs cleaning in the main form.
+  // Service cards pre-select what needs cleaning in the main form.
   var mainForm = document.getElementById("contactForm");
   var mainInterest = mainForm && mainForm.querySelector(".js-interest");
   if (mainInterest) {

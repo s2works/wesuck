@@ -6,8 +6,8 @@ Started from the Cédric LeBlanc REALTOR® site's structure, then reworked into 
 ## Highlights
 
 - **Single-page, no build step** — plain HTML/CSS/JS, deploys anywhere (Vercel, Netlify, any static host).
-- **Colours** — client palette by default: charcoal `#333333` background, gold `#a4873e` accent, lavender white `#e5e6f9` text, navy `#1b2a4a` footer. Two alternative themes can be previewed by URL: `?theme=navy` (navy background) and `?theme=lime` (the original near-black + lime look, also saved on the `backup/lime-theme` branch). All palettes are token blocks at the top of `styles.css`.
-- **Flow** — Hero + quick quote form → Trust bar → Ticker → Services → Recent work → How it works → Pricing → Reviews → About → Service area → FAQ → Quote form → Footer, plus a sticky Call / Quote bar on phones.
+- **Colours** — client palette by default: charcoal `#333333` background, gold `#a4873e` accent, lavender white `#e5e6f9` text, black footer, navy `#1b2a4a` + lavender white tags. Two alternative themes can be previewed by URL: `?theme=navy` (navy background) and `?theme=lime` (the original near-black + lime look, also saved on the `backup/lime-theme` branch). All palettes are token blocks at the top of `styles.css`.
+- **Flow** — Hero + quick quote form → Trust bar → Ticker → Services → Recent work → How it works → Reviews → About → Service area → FAQ → Quote form → Footer, plus a sticky Call / Quote bar on phones.
 - **Motion** — scroll reveals, animated stat counters, hero parallax & zoom, sticky nav, scroll-progress bar, auto-scrolling reviews.
 - **Responsive & accessible** — slide-in mobile menu, focus states, `prefers-reduced-motion` support.
 
@@ -22,12 +22,12 @@ Started from the Cédric LeBlanc REALTOR® site's structure, then reworked into 
 
 ## ⚠️ Placeholders to replace before launch
 
-Search the project for `[`, `$XX`, `TODO`, `PLACEHOLDER`, `example.com` and `000-0000`.
+Search the project for `[`, `TODO`, `PLACEHOLDER`, `example.com` and `000-0000`.
 
 - **Business details** — service area / city, owner name, phone, email, hours, social links, Google review link.
 - **Images** — `images/hero.svg`, `images/owner.svg`, `images/before-after.svg`, `images/logo-placeholder.svg`.
   Drop real photos in `images/` and update the paths in `index.html` / `styles.css` (`.hero__bg`, `.areas-banner`).
-- **Stats & prices** — the trust-bar numbers and every `$XX` price (service cards + pricing section).
+- **Stats** — the trust-bar numbers. (No prices are shown on the site — everything is quote-only.)
 - **FAQ answers** — confirm drying time, payment methods, etc.
 - **Reviews** — the testimonials are placeholders; replace with real customer reviews.
 - **Quote forms** — both forms (hero quick quote + main form) have `action="YOUR_FORM_ENDPOINT"` in `index.html`; a hidden `source` field tells you which one was used. Until it's set, submitting shows a
@@ -53,7 +53,7 @@ python3 -m http.server 8000
   Upload them, then: swap both images in the `.ba` slider in `index.html` (Recent work section),
   remove the `is-placeholder` class from the "before" image, and consider one slider per job
   and/or a slider as the hero image.
-- Real prices (`$XX`), Google rating + review count, real reviews, owner photo, towns, phone/email.
+- Google rating + review count, real reviews, owner photo, towns, phone/email.
 - Form endpoint for both quote forms (`YOUR_FORM_ENDPOINT`).
 - Vercel: link the GitHub repo (Settings → Git, production branch `main`) and turn off
   Deployment Protection before sharing with the client. GitHub: set default branch to `main`.
