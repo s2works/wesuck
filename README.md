@@ -6,7 +6,7 @@ Started from the Cédric LeBlanc REALTOR® site's structure, then reworked into 
 ## Highlights
 
 - **Single-page, no build step** — plain HTML/CSS/JS, deploys anywhere (Vercel, Netlify, any static host).
-- **Dark theme, lime accent** — colour tokens live at the top of `styles.css` (`:root`), so the accent and surfaces can be re-branded in one place. Fonts: Archivo (headings) + DM Sans (body).
+- **Colours** — client palette by default (navy `#1b2a4a`, gold `#a4873e`, lavender white `#e5e6f9`, charcoal `#333333`). The original near-black + lime look is kept as a backup theme: add `?theme=lime` to the URL to preview it. Both palettes are token blocks at the top of `styles.css`; the lime version is also saved on the `backup/lime-theme` branch. Fonts: Archivo (headings) + DM Sans (body).
 - **Flow** — Hero + quick quote form → Trust bar → Ticker → Services → Recent work → How it works → Pricing → Reviews → About → Service area → FAQ → Quote form → Footer, plus a sticky Call / Quote bar on phones.
 - **Motion** — scroll reveals, animated stat counters, hero parallax & zoom, sticky nav, scroll-progress bar, auto-scrolling reviews.
 - **Responsive & accessible** — slide-in mobile menu, focus states, `prefers-reduced-motion` support.
